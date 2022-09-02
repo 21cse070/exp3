@@ -1,0 +1,64 @@
+package exp.pkg3;
+
+
+public class EXP3 {
+
+   
+    public static void main(String[] args) {
+    
+        BankA obj=new BankA();
+        BankB obj1=new BankB();
+        BankC obj2=new BankC();
+        System.out.println("BankA Deposite:"+obj.getBalance());
+         System.out.println("BankB Deposite:"+obj1.getBalance());
+          System.out.println("BankC Deposite:"+obj.getBalance());
+         
+    }
+    
+}
+class BANK
+{
+   int getBalance()
+    {
+        return 0;
+    }
+            
+}
+class BankA extends BANK
+{
+int getBalance()
+{
+    return 1000;
+    
+}
+         
+}
+class BankB extends BANK
+{
+  int getBalance()
+  {
+      return 1500;
+  }
+          
+}
+class BankC extends BANK
+{
+ int getBalance()
+{
+return 2000;
+}
+}
+class UCO extends BANK
+{
+int getBalance()
+{
+return 6;
+}
+}
+class IND extends BANK
+{
+ int getBalance()
+ {
+return 5;
+ }
+}
